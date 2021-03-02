@@ -1,7 +1,5 @@
-Make generated attributes editable.
+﻿- Expanded ship generation 
+- Create information given by system augur scan
+- Help system?
 
-Make Generator attributes extendable.
 
-...
-Very Long term
-Use this as a universal generator.
