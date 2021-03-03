@@ -1,2 +1,2 @@
 # RogueTraderGeneratorTools
-Solar system generator for the Rogue Trader roleplaying game.
+Solar system, weapon, and other. generator for the Rogue Trader roleplaying game.
