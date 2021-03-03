@@ -3,24 +3,25 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Input Needed" Height="273.152" Width="603.502"
         SizeToContent="Height" ResizeMode="CanResize" ShowInTaskbar="False"
-        MinHeight="250" MinWidth="500">
+        MinHeight="250" MinWidth="500" Foreground="#FFF2A365" Background="#FF222831">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Name="MessageToUser" Text="Some Text" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" />
-        <TextBox Grid.Row="1" Name="UserInput" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" TextChanged="UserInputTextChanged" KeyDown="UserInputKeyDown" TextWrapping="Wrap" AcceptsReturn="True">
+        <TextBlock Grid.Row="0" Name="MessageToUser" Text="Some Text" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Foreground="#FFF2A365" />
+        <TextBox Grid.Row="1" Name="UserInput" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" TextChanged="UserInputTextChanged" KeyDown="UserInputKeyDown" TextWrapping="Wrap" AcceptsReturn="True" Background="#FF222831" BorderBrush="#FF393939" Foreground="#FFF2A365">
         </TextBox>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
+                <ColumnDefinition Width="186*" />
+                <ColumnDefinition Width="17*"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="2" Name="CancelButton" Content="Cancel" Margin="10" Padding="4" Width="75" Click="CancelButtonClick"/>
-            <Button Grid.Column="1" Name="OkButton" Content="OK" Margin="10" Padding="4"  Width="75" Click="OkButtonClick" IsEnabled="False"/>
+            <Button Grid.Column="3" Name="CancelButton" Content="Cancel" Margin="10" Padding="4" Width="75" Click="CancelButtonClick" Background="#FF30475E" BorderBrush="#FF393939" Foreground="#FFF2A365"/>
+            <Button Grid.Column="2" Name="OkButton" Content="OK" Margin="10" Padding="4"  Width="75" Click="OkButtonClick" IsEnabled="False" Background="#FF30475E" BorderBrush="#FF393939" Foreground="#FFF2A365"/>
         </Grid>
     </Grid>
 </Window>

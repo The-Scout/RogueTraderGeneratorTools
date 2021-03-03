@@ -223,13 +223,13 @@ namespace RogueTraderSystemGenerator.Nodes
                 if (zone != null)
                 {
                     if(zone.Zone == SystemZone.InnerCauldron)
-                        return new SolidColorBrush(Colors.Red);
+                        return new SolidColorBrush(Colors.Firebrick);
                     if (zone.Zone == SystemZone.PrimaryBiosphere)
-                        return new SolidColorBrush(Colors.Green);
+                        return new SolidColorBrush(Colors.ForestGreen);
                     if (zone.Zone == SystemZone.OuterReaches)
-                        return new SolidColorBrush(Colors.Blue);
+                        return new SolidColorBrush(Colors.DodgerBlue);
                 }
-                return new SolidColorBrush(Colors.Black);
+                return new SolidColorBrush(Colors.Goldenrod);
             }
         }
 
